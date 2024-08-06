@@ -81,14 +81,14 @@ export function calculateRoundResult(playerMove, computerMove) {
                 "Player chose paper and computer chose paper. Player wins.",
         };
     }
-    if (SCISSORS === playerMove && SCISSORSS === computerMove) {
+    if (SCISSORS === playerMove && SCISSORS === computerMove) {
         return {
             outcome: DRAW,
             message: "Both players chose scissors. It's a draw.",
         };
     }
     throw new Error(
-        `Invalid player move (${playerMove}) or computer move ${computerMove}`
+        `Invalid player move ${playerMove} or computer move ${computerMove}`
     );
 }
 
