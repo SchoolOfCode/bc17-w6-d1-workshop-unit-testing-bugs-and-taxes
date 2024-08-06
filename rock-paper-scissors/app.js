@@ -42,7 +42,7 @@ export function calculateRoundResult(playerMove, computerMove) {
             message: "Player chose rock and computer chose paper. Computer wins.",
         };
     }
-    if (playerMove === "ROCK" && computerMove === SCISSORS) {
+    if (playerMove === ROCK && computerMove === SCISSORS) {
         return {
             outcome: WIN,
             message: "Player chose rock and computer chose paper. Player wins.",

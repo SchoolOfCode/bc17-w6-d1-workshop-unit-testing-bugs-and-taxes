@@ -12,4 +12,9 @@ test('bare bones test should pass', () => {
     outcome: "loss",
     message: "Player chose rock and computer chose paper. Computer wins.",
 })
+
+expect(calculateRoundResult ("rock", "scissors")).toStrictEqual({
+  outcome: "win",
+  message: "Player chose rock and computer chose paper. Player wins.",
+})
   })
